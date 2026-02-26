@@ -1,0 +1,799 @@
+20 Basic SQL Interview Questions:
+1. What is DDL? Give examples.
+(Example: CREATE, ALTER, DROP)
+2. What is DML? Give examples.
+(Example: SELECT, INSERT, UPDATE, DELETE)
+3. What is the difference between DDL and DML?
+4. What is a Primary Key? Why is it important?
+5. What is a Foreign Key? Give an example scenario.
+6. What is the difference between WHERE and HAVING?
+7. What is the difference between UNION and UNION ALL?
+8. What is the difference between DELETE and TRUNCATE?
+9. What are NULL values in SQL? How do you handle them?
+10. What is the use of COALESCE()?
+11. What is JOIN? Explain different types of JOINs.
+12. What is the difference between INNER JOIN and LEFT JOIN?
+13. What does GROUP BY do? Give an example.
+14. What is ORDER BY used for?
+15. What is the LIMIT / TOP clause used for?
+16. What is an Index? How does it improve performance?
+17. What is a View? Why is it used?
+18. How do you find duplicate records in a table?
+19. How do you fetch the latest record for each user using SQL?
+(Hint: ROW_NUMBER / MAX(date))
+20. What is the difference between CHAR and VARCHAR?
+
+LINUX:
+What is the difference between grep, egrep, and fgrep?
+How can you identify which process is listening on a specific port?
+What is the difference between ps -ef and ps aux?
+How do you find the top 10 largest files in a directory?
+What is the purpose of /etc/fstab, and how do you mount all entries without rebooting?
+How do you check which user owns a process and how much memory it’s using?
+What is the difference between chmod, chown, and chgrp?
+How do you view real‑time logs using command-line tools?
+Explain the difference between df -h and du -sh.
+How do you list all active network connections on a Linux server?
+What are hard links and soft links? How do you create them?
+How do you schedule periodic tasks and verify existing scheduled jobs for a specific user?
+How can you kill a process using its PID and its name?
+What is the difference between /bin, /sbin, /usr/bin, and /usr/sbin?
+How do you view system resource usage using top, and what does the load average represent?
+How do you use the awk command to print the 1st and 3rd columns from a file?
+What is the difference between awk and sed? In what scenarios would you use each?
+How do you use grep to search recursively inside all files in a directory?
+What is the difference between grep, egrep, and fgrep?
+How do you use find to list all files modified in the last 24 hours?
+How do you delete files older than 7 days using the find command?
+What is the purpose of the cut command? Give an example use case.
+How do you sort a file in reverse order using the sort command?
+What is the difference between df -h and du -sh?
+How do you monitor real‑time disk writes using the iostat command?
+How do you check which process is using a specific port using lsof?
+What is the difference between netstat -tulnp and ss -tulnp?
+How do you kill a process using its PID? How about killing using its name?
+How can you list the CPU and memory consumption of each process using ps?
+How do you use chmod, chown, and chgrp to manage permissions and ownership?
+=========================================================
+CI/CD Lifecycle & Concepts
+Explain the complete CI/CD lifecycle and where Jenkins fits into each stage.
+How does Jenkins ensure continuous integration when multiple developers push code simultaneously?
+What is the difference between Continuous Delivery and Continuous Deployment?
+How do you implement automated rollback in a Jenkins pipeline?
+How does Jenkins support artifact management, and what are common tools used for it?
+How do you automate deployment of a WAR file to an Apache Tomcat server using a Jenkins pipeline, and what plugins or credentials are required?
+Using Jenkins, how would you design and implement a fully automated Continuous Deployment?
+=========================================================
+ITSM – BMC REMEDY – 15 BASIC QUESTIONS
+What is BMC Remedy ITSM?
+What is an Incident?
+What is a Service Request?
+What is Problem Management? Explain the different stages and how it is taken to closure.
+What is Change Management? Explain the different stages and how it is taken to closure.
+What is CMDB?
+What does SLA stand for?
+What is Priority?
+What is Severity?
+What does a Service Desk Analyst do?
+In Remedy, what form is used to log an Incident?
+What key elements must be included in Incident documentation within BMC Remedy?
+How would you document the Incident lifecycle from creation to closure in Remedy?
+What information should be captured when documenting a Problem investigation?
+How do you document root cause analysis (RCA) in BMC Remedy?
+What are the standard fields required in Change Request documentation in Remedy ITSM?
+-------------------------------------------------------------------------------------------------------------
+SPLUNK: -
+Alerts
+How do you create a basic alert in Splunk from a saved search?
+What options can you configure in an alert, such as trigger conditions or alert actions?
+ 
+Dashboards
+What steps do you follow to create a dashboard in Splunk from an existing search query?
+What is a dashboard panel and what type of visualizations can you add to it?
+How do you edit or update a dashboard when requirements change?
+ 
+Troubleshooting
+If data is not showing in Splunk, what are the first basic checks you would perform?
+How can you verify if a forwarder is sending data correctly to Splunk?
+What does the “No results found” message typically indicate in a Splunk search?
+ 
+Roles: Power User & Admin
+What is the difference between a Splunk User and a Power User?
+What features does a Power User have that a regular User does not?
+What are the main responsibilities of a Splunk Admin in a basic setup?
+ 
+SPL (Search Processing Language)
+What is SPL and why is it important in Splunk searches?
+What does the search command do in Splunk, and when would you use it?
+How would you use the stats command to summarize or aggregate search results in Splunk?
+What is the purpose of the eval command, and when would you use it in a search query?
+How does the rex command help in extracting fields from unstructured logs?
+How is the timechart command used for visualizing data over time in Splunk?
+What does the dedup command do, and in what situations would you use it?
+
+
+Core SRE Questions
+ 
+1. SLI / SLO / SLA
+ 
+What are SLI, SLO, SLA? Give real examples.
+ 
+Who sets SLOs — business, product, SRE, or customer?
+ 
+What factors do you consider while defining SLO time window?
+ 
+How do you measure user-facing SLIs for APIs, DB, and UI?
+ 
+What happens when SLO is breached?
+ 
+How do you prioritize workloads when you are in error budget burn?
+ 
+ 
+ 
+---
+ 
+2. Error Budget
+ 
+What is error budget?
+ 
+What is error budget burn rate?
+ 
+What is surplus, deficit, recovery of error budget?
+ 
+What do you do in case of fast burn? (deploy freeze, code fixes, rollback)
+ 
+How to balance feature velocity vs stability?
+ 
+What is Rainy Day Fund technique in error budgets?
+ 
+ 
+ 
+---
+ 
+3. Monitoring / Observability
+ 
+What are the four golden signals?
+ 
+What is the difference between logs, metrics, traces?
+ 
+Explain RED metrics, USE method.
+ 
+Why is P95/P99 latency critical? What is tail latency?
+ 
+What is MTTR, MTBF? Examples.
+ 
+How do you reduce MTTR effectively?
+ 
+ 
+ 
+---
+ 
+4. Incident Management / On-Call
+ 
+During a Sev1, what is your first action?
+ 
+How do you perform triage?
+ 
+What tools have you used for on-call (PagerDuty / Opsgenie / ChatOps)?
+ 
+What is a blameless postmortem?
+ 
+What do you include in an incident timeline?
+ 
+What is the difference between incident, problem, root cause?
+ 
+ 
+ 
+---
+ 
+5. SRE Production Practices
+ 
+What is toil? How do you measure and reduce it?
+ 
+What are common sources of toil in production?
+ 
+What is the SRE hierarchy/pyramid?
+ 
+What is config drift? How do you manage it?
+ 
+When do you choose central SRE vs embedded SRE model?
+ 
+ 
+ 
+---
+ 
+6. Deployment / Reliability
+ 
+What is blue-green deployment?
+ 
+What are canary, progressive delivery, feature flags?
+ 
+What happens if code has issues — how should SRE react?
+ 
+If the issue is in DB (not in code), how do you solve it?
+ 
+ 
+ 
+---
+ 
+7. Chaos Engineering
+ 
+Why do companies run chaos experiments on production?
+ 
+What is the difference between fault injection and chaos?
+ 
+What tools have you used? (Litmus, Gremlin, ChaosMesh)
+ 
+How do you measure success of chaos experiments?
+ 
+ 
+ 
+---
+ 
+8. Production Systems / Performance
+ 
+What is difference between load, stress, soak tests?
+ 
+What is thundering herd problem?
+ 
+What is circuit breaker pattern?
+ 
+How do you handle cascading failures?
+ 
+What is backpressure?
+ 
+ 
+ 
+---
+ 
+9. Cloud Native SRE
+ 
+What is the role of SRE in Kubernetes?
+ 
+Explain how a service mesh helps reliability.
+ 
+How does an SRE calculate capacity planning?
+ 
+Explain auto-scaling based on custom metrics.
+ 
+ 
+ 
+---
+10. Real Scenario Questions
+ 
+API P99 latency suddenly increased — how do you investigate?
+ 
+Error budget consumed 60% in 2 days — what actions do you take?
+ 
+One stage in CI/CD pipeline is stuck — how do you troubleshoot?
+ 
+Microservice is running but returning 500 errors — what steps?
+ 
+Deployment is done but traffic not shifting — what is probably wrong?
+
+Jenkins pipeline troubleshooting 
+What steps do you follow to troubleshoot a failed Jenkins pipeline?
+How do you diagnose why a build is stuck in the Jenkins queue?
+What do you check when a specific Jenkins agent/node fails to pick up jobs?
+How do you troubleshoot Jenkinsfile syntax or validation issues?
+How do you debug when a Shared Library update breaks multiple pipelines?
+What steps do you take when Jenkins cannot connect to an agent (JNLP/SSH)?
+How do you investigate missing environment variables inside a pipeline stage?
+What do you check when SCM webhooks do not trigger the pipeline?
+How do you debug multibranch pipeline branch discovery issues?
+What is your approach when stash/unstash fails between pipeline stages?
+How do you troubleshoot Docker-related failures inside Jenkins pipelines?
+What checks do you perform when the pipeline fails due to missing tools or dependencies on an agent?
+How do you investigate sudden slowness in pipeline execution time?
+What steps do you take when archiveArtifacts does not store expected files?
+How do you troubleshoot build failures caused by Jenkins plugin upgrades?
+How do you debug workspace corruption or leftover files affecting builds?
+What do you check when a scheduled (cron) Jenkins job stops running?
+How do you investigate credential-related failures inside a pipeline?
+How do you handle errors during deployment stages triggered from Jenkins?
+What is your troubleshooting approach when Jenkins fails due to disk space or memory issues?
+
+
+
+ITSM Troubleshooting –
+ 
+1. How do you approach troubleshooting a high-priority (P1/Sev1) incident?
+ 
+ 
+2. What steps do you take during the triage of a new incident?
+ 
+ 
+3. How do you determine incident priority using impact and urgency?
+ 
+ 
+4. What will you check first when an application is slow for all users?
+ 
+ 
+5. How do you troubleshoot when multiple incidents point to the same CI?
+ 
+ 
+6. How do you differentiate between an incident and a problem?
+ 
+ 
+7. What will you do if the assigned resolver group is not responding?
+ 
+ 
+8. How do you handle repeated incidents for the same service?
+ 
+ 
+9. How do you validate if an incident is resolved before closing it?
+ 
+ 
+10. What actions do you take if an SLA is about to breach?
+ 
+ 
+11. How do you troubleshoot false alerts from monitoring tools?
+ 
+ 
+12. How do you identify the root cause for a recurring major incident?
+ 
+ 
+13. What checks do you perform before approving an emergency change?
+ 
+ 
+14. How do you use CMDB relationships during troubleshooting?
+ 
+ 
+15. During a war room, what troubleshooting steps do you coordinate between teams?
+
+
+Patch Management –
+What is patch management?
+Why are patches important for servers and applications?
+What are the different types of patches?
+How do you check the current patch level on a Linux server?
+How do you check installed patches on a Windows server?
+What tools have you used for patching?
+What is a maintenance window?
+What is a critical or security patch?
+When does a patch require a system reboot?
+What steps do you follow before applying patches on production servers?
+How do you verify whether a patch was successfully installed?
+What is a rollback plan in patching?
+What do you do if a patch installation fails?
+Why should patches be tested in UAT or staging environments first?
+What is the difference between a security patch and a feature update?
+What is an emergency patch?
+What logs do you check after patching a Linux server?
+What logs do you check after patching a Windows server?
+How often should patching be performed in an organization?
+What is patch compliance?
+What are CVE and CVSS?
+What is kernel patching?
+What is live patching?
+How do you schedule patching for a server cluster?
+What challenges have you faced during patching activities?
+
+
+Certificate Installation
+What is certificate installation?
+How is a certificate installed on a server or device?
+What components are required for certificate installation?
+What are common installation locations for certificates (e.g., personal store, computer store, CA store)?
+What issues can occur during certificate installation?
+Certificate Renewals – Tracking & Execution
+Why do certificates need to be renewed?
+How do you track certificate expiration across an organization?
+What tools are commonly used to monitor certificate expiry?
+What is automated certificate renewal?
+What happens if a certificate is not renewed before expiry?
+What is the renewal workflow for a certificate?
+What differences exist between renewing and reissuing a certificate?
+PKI (Public Key Infrastructure) Basics
+What is PKI?
+What is the role of a Root Certificate Authority?
+What is an Intermediate CA and why is it used?
+What is a certificate chain?
+What is a CRL (Certificate Revocation List)?
+What is OCSP?
+What is a certificate template?
+Cryptography Basics
+What is the difference between public and private keys?
+What is asymmetric encryption?
+What is symmetric encryption?
+What is a digital signature?
+What is hashing?
+What algorithms are commonly used in certificates (RSA, ECC, SHA‑256)?
+Security Keys
+What is a hardware security key?
+What is the purpose of HSMs (Hardware Security Modules)?
+What is the difference between software keys and hardware keys?
+Why are hardware keys considered more secure?
+What is FIDO2 and how does it relate to security keys?
+SSL/TLS Certificates
+What is an SSL/TLS certificate?
+What problem does SSL/TLS solve?
+How does the SSL/TLS handshake work?
+What is the difference between HTTP and HTTPS?
+What is SAN (Subject Alternative Name)?
+What are the different types of SSL/TLS certificates?
+What makes a certificate trusted?
+What is the purpose of key usage and extended key usage?
+ A website shows “Your connection is not private.” What checks would you perform first?
+What are the common reasons a certificate appears as “Not Trusted”?
+How do you identify if a certificate has expired on a system?
+A user cannot connect to Wi‑Fi using EAP‑TLS. What certificate-related checks would you do?
+Intune deployed certificate profiles, but users did not receive certificates. What would you investigate?
+A browser displays “Certificate name mismatch.” What could be causing this?
+HTTPS is enabled, but the site still shows “Not Secure.” What certificate issues can cause this?
+How can you verify which Certificate Authority signed a certificate?
+A certificate installs without its private key. What checks would you perform?
+What could cause certificate auto‑renewal to fail in an enterprise environment?
+A VPN client reports “No valid certificate found.” What certificate conditions should be checked?
+A server is missing an intermediate certificate. What problems might this cause?
+Why would a SCEP enrollment return an HTTP 404 error?
+What issues arise when a certificate has incorrect Key Usage or EKU values?
+How do you check if a certificate has been revoked by the CA?
+A log file grows rapidly to several GBs every day. How would you write a script to archive logs older than 7 days and compress them automatically?
+Your application generates errors intermittently. Write a script to monitor a log file in real time and alert (print a message) whenever the word “ERROR” appears.
+ 
+A log file grows rapidly to several GBs every day. How would you write a script to archive logs older than 7 days and compress them automatically?
+Your application generates errors intermittently. Write a script to monitor a log file in real time and alert (print a message) whenever the word “ERROR” appears.
+You need to validate that a configuration file contains a specific key-value pair. How would your script check this and exit with different status codes for success or failure?
+Servers are running out of disk space. Write a script to check disk usage, and if usage crosses 80%, delete files older than 30 days in a given directory.
+You have a CSV file with thousands of entries. How would you write a script to extract only the rows where the 3rd column contains the word “FAILED”?
+A service must always be running. Write a monitoring script that checks if a process is running, and if not, restarts it and logs the event.
+You need to deploy code to 20 servers. How can you write a shell script to run the same command over SSH on all servers and generate a consolidated output report?
+A backup job often fails due to permission errors. Write a script to check file permissions of a directory and recursively fix incorrect permissions.
+Write a script that continuously checks internet connectivity and logs timestamps when connectivity is lost and restored.
+You need to sanitize input files by removing empty lines, trimming spaces, and removing duplicate lines. What script would accomplish this?
+A large directory contains mixed file types. Write a script to categorize files into folders based on their extensions (e.g., .log to logs/, .txt to texts/).
+You get daily reports as ZIP files via SFTP. How would your script download new files, extract them, and process each file line‑by‑line?
+Your application uses environment variables. Write a script to verify that all required environment variables are set before startup.
+A developer accidentally checked in secret keys. Write a script that scans all files in a git repository for hard‑coded secrets (API keys, passwords).
+You need to monitor CPU usage and kill any process that consumes more than 80% CPU for more than 60 seconds. How would you script it?
+Write a script to check whether all servers in a list are reachable, and generate a status report in JSON format.
+A directory receives hundreds of files every hour. Write a script to watch for new files and automatically move them to another location for processing.
+You need to extract the IP addresses making the most requests from an access log. What shell script would you write to identify the top 5 IPs?
+Developers often forget to add execute permissions on scripts. Write a script that checks .sh files in a repo and fixes permissions automatically.
+Write a script to compare two directories and list files that differ, including file sizes and timestamps.
+ A log file grows rapidly to several GBs every day. How would you write a script to archive logs older than 7 days and compress them automatically?
+Your application generates errors intermittently. Write a script to monitor a log file in real time and alert (print a message) whenever the word “ERROR” appears.
+You need to validate that a configuration file contains a specific key-value pair. How would your script check this and exit with different status codes for success or failure?
+Servers are running out of disk space. Write a script to check disk usage, and if usage crosses 80%, delete files older than 30 days in a given directory.
+You have a CSV file with thousands of entries. How would you write a script to extract only the rows where the 3rd column contains the word “FAILED”?
+A service must always be running. Write a monitoring script that checks if a process is running, and if not, restarts it and logs the event.
+You need to deploy code to 20 servers. How can you write a shell script to run the same command over SSH on all servers and generate a consolidated output report?
+A backup job often fails due to permission errors. Write a script to check file permissions of a directory and recursively fix incorrect permissions.
+Write a script that continuously checks internet connectivity and logs timestamps when connectivity is lost and restored.
+You need to sanitize input files by removing empty lines, trimming spaces, and removing duplicate lines. What script would accomplish this?
+A large directory contains mixed file types. Write a script to categorize files into folders based on their extensions (e.g., .log to logs/, .txt to texts/).
+You get daily reports as ZIP files via SFTP. How would your script download new files, extract them, and process each file line‑by‑line?
+Your application uses environment variables. Write a script to verify that all required environment variables are set before startup.
+A developer accidentally checked in secret keys. Write a script that scans all files in a git repository for hard‑coded secrets (API keys, passwords).
+You need to monitor CPU usage and kill any process that consumes more than 80% CPU for more than 60 seconds. How would you script it?
+Write a script to check whether all servers in a list are reachable, and generate a status report in JSON format.
+A directory receives hundreds of files every hour. Write a script to watch for new files and automatically move them to another location for processing.
+You need to extract the IP addresses making the most requests from an access log. What shell script would you write to identify the top 5 IPs?
+Developers often forget to add execute permissions on scripts. Write a script that checks .sh files in a repo and fixes permissions automatically.
+Write a script to compare two directories and list files that differ, including file sizes and timestamps.
+
+
+Basic Bash Scripting Questions:
+What is a Bash script and how do you create one?
+How do you make a Bash script executable?
+What is the purpose of the #!/bin/bash shebang line?
+How do you declare a variable in Bash?
+How do you read input from a user in Bash?
+What are $0, $1, $2, $@, and $# in Bash?
+How do you write an if‑else statement in Bash?
+How do you use a for loop in Bash?
+How do you use a while loop in Bash?
+How do you check if a file exists in Bash?
+How do you check if a directory exists in Bash?
+How do you check the exit status of the previous command?
+What is the difference between " and ' (double vs single quotes) in Bash?
+How do you pass arguments to a Bash script?
+How do you create a function in Bash?
+What is the difference between [ ] and [[ ]]?
+How do you append output to a file in Bash?
+How do you redirect stderr to a file in Bash?
+How do you loop through a file line by line?
+How do you debug a Bash script?
+What does set -e do in Bash scripts?
+How do you compare integers in Bash?
+How do you compare strings in Bash?
+How do you use a case statement in Bash?
+How do you extract a field from a text line using cut?
+How do you replace text in a file using sed?
+How do you split a string in Bash?
+How do you check if a variable is empty?
+How do you declare an array in Bash?
+How do you get the length of a string in Bash?
+LOGS & TROUBLESHOOTING
+Your application logs are not updating. How will you check if the process is writing logs?
+A log file is growing too fast. How do you find what lines were written in the last 5 seconds?
+You need to find how many times the word “ERROR” appears in a log. What will you do?
+A specific error happens frequently. How do you extract only unique error messages from a log?
+You want to monitor multiple log files at the same time. What tool/command can you use?
+A log file is 20GB. How will you open it without loading it entirely?
+How do you display 50 lines before and after the keyword “fatal” in logs?
+Your app logs stopped updating at midnight. How do you find entries from the last 2 hours?
+You suspect that someone edited a config file recently. How do you verify last modification time?
+How do you follow logs of a systemd service in real‑time?
+PROCESS & PERFORMANCE
+Your server CPU is at 100%. How do you find which process is consuming it?
+A Java process is hung. How do you capture its system calls?
+A process is running multiple times. How do you list all its PIDs?
+Your application is slow. How do you check memory usage?
+A background script is running. How do you find its command line?
+A process is using port 8080. How do you identify it?
+A user reports high load average. Which commands will you run to verify?
+A process is in "D" (uninterruptible sleep) state. How do you diagnose it?
+How do you list processes sorted by memory?
+How do you kill all instances of the "python3" process?
+NETWORK & PORT ISSUES
+Your application cannot connect to another server. How do you test connectivity?
+Port 3306 should be open, but the app cannot connect. How do you check if it's listening?
+How do you check DNS resolution for a domain?
+HTTP API returns 500 error. How do you debug using curl?
+How do you trace network hops to a server?
+How do you capture only HTTPS traffic for debugging?
+How do you check if firewall is blocking a port?
+A server has multiple IPs. How do you list them?
+How do you find what routes your system is using?
+A service is listening on IPv6 only. How do you verify this?
+DISK, SPACE & INODES
+Disk shows 100% full. How do you find which directory is consuming space?
+Disk is full but du shows very little usage. What's the cause?
+How do you list top 10 largest files on server?
+How do you check inode usage?
+How do you find files older than 7 days and delete them?
+How do you find large number of small files in a directory?
+A mount point is not accessible. How do you check NFS status?
+How do you remount a filesystem in read/write mode?
+How do you check disk I/O performance?
+You suspect disk latency. Which command will you use?
+PERMISSIONS & USER ISSUES
+A user cannot execute a script. How do you fix it?
+A directory needs read/write access for a group. What do you do?
+A file is owned by root but needs to be accessed by an app user. What will you do?
+How do you check which groups a user belongs to?
+A user forgot password. How do you reset it?
+SERVICES, SYSTEMCTL & CRON (46–50)
+A service keeps crashing. How do you check recent logs?
+A service will not start. How do you check if ports or dependencies are blocking it?
+A systemd service is disabled. How do you enable it to start automatically?
+A cron job didn’t run. How do you troubleshoot?
+How do you restart a service and verify if it is running successfully?
+  
+LOG & TEXT PROCESSING
+tail
+head
+cat
+less
+more
+grep
+awk
+sed
+sort
+uniq
+cut
+wc
+SEARCH & FILE DISCOVERY
+find
+locate
+PROCESS & PERFORMANCE
+ps
+top
+htop
+pidof
+nice
+renice
+strace
+lsof
+DISK, SPACE & FILESYSTEM
+df
+du
+mount
+umount
+lsblk
+blkid
+fdisk
+mkfs
+fsck
+NETWORK & CONNECTIVITY
+ping
+curl
+wget
+nslookup
+dig
+traceroute
+ss
+netstat
+tcpdump
+ip
+hostname
+SERVICES & SYSTEM CONTROL
+systemctl
+service
+journalctl
+USERS, PERMISSIONS & SECURITY
+ls
+chmod
+chown
+chgrp
+passwd
+sudo
+whoami
+id
+groups
+who
+last
+FILE & DIRECTORY
+cp
+mv
+rm
+touch
+mkdir
+rmdir
+pwd
+cd
+ARCHIVE & BACKUP
+tar
+zip
+unzip
+rsync
+CRON & SCHEDULING
+crontab
+SYSTEM INFO
+uname
+uptime
+hostnamectl
+cat /etc/os‑release
+date
+timedatectl
+ 
+TEXT PROCESSING
+awk
+
+sed
+
+grep
+
+egrep
+
+fgrep
+
+cut
+
+sort
+
+uniq
+
+wc
+
+tr
+
+cat
+
+head
+
+tail
+
+nl
+
+paste
+
+join
+
+less
+
+more
+
+xargs
+SEARCH & DISCOVERY
+find
+
+locate
+
+which
+
+whereis
+FILE & DIRECTORY
+ls
+
+cp
+
+mv
+
+rm
+
+touch
+
+mkdir
+
+rmdir
+
+pwd
+
+cd
+
+stat
+ARCHIVE & COMPRESSION
+tar
+
+zip
+
+unzip
+
+gzip
+
+gunzip
+USER & PERMISSIONS
+chmod
+
+chown
+
+chgrp
+
+passwd
+
+whoami
+
+id
+
+groups
+
+umask
+PROCESS & SYSTEM
+ps
+
+top
+
+htop
+
+nice
+
+renice
+
+kill
+
+killall
+
+lsof
+
+strace
+
+uptime
+
+free
+
+vmstat
+
+iostat
+
+mpstat
+
+sar
+FILESYSTEM & DISK
+df
+
+du
+
+mount
+
+umount
+
+lsblk
+
+blkid
+
+fdisk
+
+mkfs
+
+fsck
+CRON & SCHEDULING
+crontab
+
+at
+
+batch
+ 
+
